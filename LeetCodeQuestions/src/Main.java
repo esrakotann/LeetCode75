@@ -10,10 +10,17 @@ public class Main {
         int number=2;
         System.out.println(maxNumber.maxOperations(testArray,number));
 
- */
+
         MaximumAverageSubarray maximumSubarray = new MaximumAverageSubarray();
         int []nums ={1,12,-5,-6,50,3};
         int k=4;
         System.out.println(maximumSubarray.findMaxAverage(nums,k));
+
+
+*/
+
+        LongestSubarrayOfOnes longestSubarrayOfOnes = new LongestSubarrayOfOnes();
+        int[] nums={0,1,1,1,0,1,1,0,1};
+        System.out.println(longestSubarrayOfOnes.longestSubarray(nums));
     }
 }
