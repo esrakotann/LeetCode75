@@ -19,11 +19,14 @@ public class Main {
         int[] nums={0,1,1,1,0,1,1,0,1};
         System.out.println(longestSubarrayOfOnes.longestSubarray(nums));
 
-*/
+
         FindHighestAltitude highestAltitude = new FindHighestAltitude();
         int[] nums={-4,-3,-2,-1,4,3,2};
         System.out.println(highestAltitude.largestAltitude(nums));
-
+*/
+        FindPivotIndex solution = new FindPivotIndex();
+        int[] nums={-1,-1,0,0,-1,-1};
+        System.out.println(solution.pivotIndex(nums));
 
     }
 }
