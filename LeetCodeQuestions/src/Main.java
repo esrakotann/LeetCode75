@@ -23,10 +23,14 @@ public class Main {
         FindHighestAltitude highestAltitude = new FindHighestAltitude();
         int[] nums={-4,-3,-2,-1,4,3,2};
         System.out.println(highestAltitude.largestAltitude(nums));
-*/
+
         FindPivotIndex solution = new FindPivotIndex();
         int[] nums={-1,-1,0,0,-1,-1};
         System.out.println(solution.pivotIndex(nums));
-
+*/
+        UniqueNumberOfOccurrences solution = new UniqueNumberOfOccurrences();
+        int[] nums = {-3,0,1,-3,1,1,1,-3,10,0};
+        System.out.println(solution.uniqueOccurrences(nums));
+        
     }
 }
