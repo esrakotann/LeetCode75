@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 /*
@@ -27,10 +31,27 @@ public class Main {
         FindPivotIndex solution = new FindPivotIndex();
         int[] nums={-1,-1,0,0,-1,-1};
         System.out.println(solution.pivotIndex(nums));
-*/
+
         UniqueNumberOfOccurrences solution = new UniqueNumberOfOccurrences();
         int[] nums = {-3,0,1,-3,1,1,1,-3,10,0};
         System.out.println(solution.uniqueOccurrences(nums));
-        
+
+        Solution solution1 = new Solution();
+        String s="DDRRR";
+        System.out.println("Cevappp --->  " + solution1.predictPartyVictory(s));
+
+        */
+        int [] array = {5,4,2,1,3,7};
+
+        ListNode head = new ListNode(5),headStart;
+        headStart = head;
+        for(int i =1; i< array.length; i++){
+            ListNode newNode = new ListNode(array[i]);
+            head.next = newNode;
+            head = head.next;
+        }
+        MaximumTwinSumOfALinkedList solution = new MaximumTwinSumOfALinkedList();
+        System.out.println(solution.pairSum(headStart));
+
     }
 }
