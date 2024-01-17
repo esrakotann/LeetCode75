@@ -3,7 +3,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+
+
     public static void main(String[] args) {
+
+//[3,11,20,null,null,19,33]
+        TreeNode treeNode = new TreeNode(3);
+        TreeNode treeNode1 = new TreeNode(11);
+        TreeNode treeNode2 = new TreeNode(20);
+        TreeNode treeNode3 = new TreeNode(19);
+        TreeNode treeNode4 = new TreeNode(33);
+        treeNode.left = treeNode1;
+        treeNode.right = treeNode2;
+        treeNode2.left = treeNode3;
+        treeNode2.right = treeNode4;
+
+//[2,11,26,null,null,19,33]
+        TreeNode tree = new TreeNode(2);
+        TreeNode tree1 = new TreeNode(11);
+        TreeNode tree2 = new TreeNode(26);
+        TreeNode tree3 = new TreeNode(19);
+        TreeNode tree4 = new TreeNode(33);
+        tree.left = tree1;
+        tree.right = tree2;
+        tree2.left = tree3;
+        tree2.right = tree4;
+        System.out.println(treeNode.leafSimilar(treeNode,tree));
+
 /*
         ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
         int[] testArray = {1,8,6,2,5,4,8,3,7};
