@@ -74,7 +74,7 @@ public class Main {
         tree2.right = tree4;
         System.out.println(treeNode.leafSimilar(treeNode,tree));
 
-*/
+
         //root =[3,1,4,3,null,1,5]
         TreeNode treeNode = new TreeNode(3);
         TreeNode treeNode1 = new TreeNode(1);
@@ -90,5 +90,79 @@ public class Main {
 
         CountGoodNodesinBinaryTree goodNodes = new CountGoodNodesinBinaryTree();
         System.out.println(goodNodes.findGoodNodes(treeNode.val,treeNode));
+
+ */
+
+        //root =[10,5,-3,3,2,null,11,3,-2,null,1]
+       /* TreeNode treeNode = new TreeNode(10);
+        TreeNode treeNode1 = new TreeNode(5);
+        TreeNode treeNode2= new TreeNode(-3);
+        TreeNode treeNode3 = new TreeNode(3);
+        TreeNode treeNode4 = new TreeNode(2);
+        TreeNode treeNode5 = new TreeNode(11);
+        TreeNode treeNode6 = new TreeNode(3);
+        TreeNode treeNode7 = new TreeNode(-2);
+        TreeNode treeNode8 = new TreeNode(1);
+
+        treeNode.left = treeNode1;
+        treeNode.right = treeNode2;
+        treeNode1.left = treeNode3;
+        treeNode1.right = treeNode4;
+        treeNode2.right = treeNode5;
+        treeNode3.left = treeNode6;
+        treeNode3.right = treeNode7;
+        treeNode4.right = treeNode8;
+
+                int target = 8;
+
+
+
+        //[5,4,8,11,null,13,4,7,2,null,null,5,1]
+        TreeNode treeNode = new TreeNode(5);
+        TreeNode treeNode1 = new TreeNode(4);
+        TreeNode treeNode2= new TreeNode(8);
+        TreeNode treeNode3 = new TreeNode(11);
+        TreeNode treeNode4 = new TreeNode(13);
+        TreeNode treeNode5 = new TreeNode(4);
+        TreeNode treeNode6 = new TreeNode(7);
+        TreeNode treeNode7 = new TreeNode(2);
+        TreeNode treeNode8 = new TreeNode(5);
+        TreeNode treeNode9 = new TreeNode(1);
+
+        treeNode.left = treeNode1;
+        treeNode.right = treeNode2;
+        treeNode1.left = treeNode3;
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
+        treeNode3.left = treeNode6;
+        treeNode3.right = treeNode7;
+        treeNode5.left = treeNode8;
+        treeNode5.right = treeNode9;
+
+
+        PathSumTree tree = new PathSumTree();
+        int target = 22;
+        System.out.println(tree.pathSum(treeNode,target));
+
+  */
+       // [1000000000,1000000000,null,294967296,null,1000000000,null,1000000000,null,1000000000]
+        //Be careful--> int -2 147 483 648 to  2 147 483 648
+        TreeNode treeNode = new TreeNode(1000000000);
+        TreeNode treeNode1 = new TreeNode(1000000000);
+        TreeNode treeNode2= new TreeNode(294967296);
+        TreeNode treeNode3 = new TreeNode(1000000000);
+        TreeNode treeNode4 = new TreeNode(1000000000);
+        TreeNode treeNode5 = new TreeNode(1000000000);
+
+        treeNode.left = treeNode1;
+        treeNode1.left = treeNode2;
+        treeNode2.left = treeNode3;
+        treeNode3.left = treeNode4;
+        treeNode4.left = treeNode5;
+
+        PathSumTree tree = new PathSumTree();
+        int target = 0;
+        System.out.println(tree.pathSum(treeNode,target));
+
     }
 }
